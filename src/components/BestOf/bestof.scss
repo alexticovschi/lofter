@@ -1,9 +1,39 @@
+@import "../../sass/base.scss";
+
 .bestof__wrapper {
-    background-color: aqua;
-    height: 40vh;
     grid-column: center-start / center-end;
+
+    margin: 20rem 0;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 8rem;
+    align-items: start;
+
+    &__title {
+        display: block;
+        color: $color-primary;
+
+    }
 }
 
+.bestof {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    justify-items: center;
+
+    &__img {
+        width: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        z-index: 1;
+        opacity: .7;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}
