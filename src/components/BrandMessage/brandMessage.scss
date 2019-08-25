@@ -1,4 +1,28 @@
 .brand-message {
-    background-color: green;
+    position: relative;
+    margin-top: 0rem;
+    margin-bottom: 15rem;
+
     grid-column: full-start / full-end;
+
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .centered {
+        background: linear-gradient(rgba(rgb(39, 28, 28), .50), rgba(rgb(25, 70, 78), .50)) !important;
+        padding: 6rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .centered p {
+        color: #fff;
+        font-size: 2rem;
+    }
 }
