@@ -1,0 +1,9 @@
+.commercial-second {
+    background-color: yellow;
+    height: 50vh;
+    grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    
+}

@@ -1,0 +1,10 @@
+
+.projects {
+    background-color: pink;
+    height: 60vh;
+    display: grid;
+    grid-column: center-start / center-end;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+
+}

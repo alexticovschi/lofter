@@ -1,0 +1,9 @@
+.bestof__wrapper {
+    background-color: aqua;
+    height: 40vh;
+    grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+

@@ -1,0 +1,7 @@
+.commercial-first {
+    grid-column: center-start / center-end;
+    height: 40vh;
+    background: goldenrod;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+}
