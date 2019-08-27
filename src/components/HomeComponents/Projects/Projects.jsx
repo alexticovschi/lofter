@@ -1,11 +1,11 @@
 import React from "react";
 
-import house1 from "../../Resources/img/house-1.jpeg";
-import house2 from "../../Resources/img/house-2.jpeg";
-import house3 from "../../Resources/img/house-3.jpeg";
-import house4 from "../../Resources/img/house-4.jpeg";
-import house5 from "../../Resources/img/house-5.jpeg";
-import house6 from "../../Resources/img/house-6.jpeg";
+import house1 from "../../../Resources/img/house-1.jpeg";
+import house2 from "../../../Resources/img/house-2.jpeg";
+import house3 from "../../../Resources/img/house-3.jpeg";
+import house4 from "../../../Resources/img/house-4.jpeg";
+import house5 from "../../../Resources/img/house-5.jpeg";
+import house6 from "../../../Resources/img/house-6.jpeg";
 
 import "./projects.scss";
 

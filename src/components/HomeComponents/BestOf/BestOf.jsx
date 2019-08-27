@@ -1,8 +1,8 @@
 import React from "react";
-import chair from "../../Resources/img/chair.jpg";
-import lamp from "../../Resources/img/lamp.jpg";
-import table from "../../Resources/img/table.jpg";
-import chair2 from "../../Resources/img/chair2.jpg";
+import chair from "../../../Resources/img/chair.jpg";
+import lamp from "../../../Resources/img/lamp.jpg";
+import table from "../../../Resources/img/table.jpg";
+import chair2 from "../../../Resources/img/chair2.jpg";
 
 import "./bestof.scss";
 

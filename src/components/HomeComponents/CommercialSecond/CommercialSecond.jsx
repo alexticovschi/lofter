@@ -1,5 +1,5 @@
 import React from "react";
-import commercial2 from "../../Resources/img/commercial2.jpg";
+import commercial2 from "../../../Resources/img/commercial2.jpg";
 
 import "./commercialSecond.scss";
 

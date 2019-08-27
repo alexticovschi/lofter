@@ -1,5 +1,5 @@
 import React from "react";
-import brand from "../../Resources/img/brand-message.jpg";
+import brand from "../../../Resources/img/brand-message.jpg";
 
 import "./brandMessage.scss";
 

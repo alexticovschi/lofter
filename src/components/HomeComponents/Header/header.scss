@@ -1,9 +1,9 @@
-@import "../../sass/base";
+@import "../../../sass/base";
 
 .header {
     background-color: $color-grey-dark-1;
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba($color-header, .70), rgba($color-header, .70)), url(../../Resources/img/header-background.jpg);
+    background-image: linear-gradient(rgba($color-header, .70), rgba($color-header, .70)), url(../../../Resources/img/header-background.jpg);
     background-size: cover;
     background-position: center;
     padding: 8rem;
