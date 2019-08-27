@@ -9,9 +9,9 @@ const Toolbar = props => (
     <div className="toolbar-wrapper">
       <nav className="toolbar__navigation">
         <div className="toolbar__logo">
-          <a href="/">
+          <Link to="/">
             <span>Lofter</span>
-          </a>
+          </Link>
         </div>
         <div className="spacer" />
         <div className="toolbar_navigation-items">
