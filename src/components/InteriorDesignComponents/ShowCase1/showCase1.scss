@@ -1,0 +1,35 @@
+.showcase1 {
+    grid-column: center-start / full-end;
+
+    margin: 15rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__text {
+
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+
+        .inner-text {
+            grid-row: 2 / span 2;
+            background-color: rgb(204, 245, 245);
+            transform: translateX(8rem);
+
+            display: grid;
+            align-content: center;
+            justify-self: center;
+        }
+
+        p {
+            font-size: 2rem;
+            color: #000;
+            padding: 2rem;
+            text-align: start;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
