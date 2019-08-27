@@ -8,6 +8,7 @@ const ShowCase = () => {
   return (
     <section className="showcase1">
       <div className="showcase1__text">
+        <h2 className="showcase1-title">Showcase 1</h2>
         <div className="inner-text">
           <p>
             {" "}

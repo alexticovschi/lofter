@@ -10,6 +10,8 @@ const ShowCase = () => {
       <img src={showcase2} className="showcase2__img" />
 
       <div className="showcase2__text">
+        <h2 className="showcase2-title">Showcase 2</h2>
+
         <div className="inner-text">
           <p>
             {" "}

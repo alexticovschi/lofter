@@ -1,6 +1,5 @@
 @import "../../../sass/base";
 
-
 .showcase2 {
     grid-column: full-start / center-end;
 
@@ -8,6 +7,19 @@
 
     display: grid;
     grid-template-columns: 2fr 1fr;
+
+    
+    &-title {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+
+        font-size: 4.6rem;
+        background-color: $color-primary;
+        background: linear-gradient(rgba($color-primary, .80), rgba($color-primary, .100));
+        width: 100%;
+        transform: translateX(-4rem);
+    }
 
     &__text {
         display: grid;

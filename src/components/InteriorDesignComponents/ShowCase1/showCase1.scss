@@ -1,3 +1,5 @@
+@import "../../../sass/base";
+
 .showcase1 {
     grid-column: center-start / full-end;
 
@@ -6,8 +8,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
-    &__text {
+    &-title {
+        display: grid;
+        align-content: center;
+        justify-items: center;
 
+        font-size: 4.6rem;
+        background-color: $color-primary;
+        background: linear-gradient(rgba($color-primary, .90), rgba($color-primary, .100));
+        width: 100%;
+        transform: translateX(4rem);
+
+    }
+
+    &__text {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
 
