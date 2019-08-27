@@ -64,9 +64,9 @@ const Projects = () => {
       </div>
 
       <div className="project">
-        <img src={house4} alt="House 4" className="projectproject__img" />
+        <img src={house4} alt="House 4" className="project__img" />
 
-        <h5 className="projectproject__name">RESIDENTIAL DESIGN</h5>
+        <h5 className="project__name">RESIDENTIAL DESIGN</h5>
         <div className="project__description">
           <p>
             We assist in creating spaces that respond to the precise needs of
