@@ -1,13 +1,37 @@
 import React from "react";
-import LogoBBC from "../../Resources/img/logo-bbc.png";
-import LogoForbes from "../../Resources/img/logo-forbes.png";
-import LogoTech from "../../Resources/img/logo-techcrunch.png";
-import LogoBI from "../../Resources/img/logo-bi.png";
+import { Link } from "react-router-dom";
 
 import "./footer.scss";
 
 const Footer = () => {
-  return <footer className="footer">Footer</footer>;
+  return (
+    <footer className="footer">
+      <h2 className="heading-2 footer__logo">Lofter Interiors</h2>
+
+      <div className="footer__links">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/interior-design">Interior Design</Link>
+          </li>
+          <li>
+            <Link to="/brochures">Brochures</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
