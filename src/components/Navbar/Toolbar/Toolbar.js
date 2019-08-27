@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.scss";
@@ -16,22 +17,22 @@ const Toolbar = props => (
         <div className="toolbar_navigation-items">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/interior-design">Interior Design</a>
+              <Link to="/interior-design">Interior Design</Link>
             </li>
             <li>
-              <a href="/brochures">Brochures</a>
+              <Link to="/brochures">Brochures</Link>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
