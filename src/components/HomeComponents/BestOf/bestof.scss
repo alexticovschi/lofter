@@ -5,10 +5,21 @@
 
     margin: 20rem 0;
 
+    @media (max-width: 420px) {
+        grid-column: full-start / full-end;
+
+        margin: 8rem 2rem;
+    }
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     grid-gap: 8rem;
     align-items: start;
+
+
+    @media (max-width: 840px) {
+        grid-gap: 2rem;
+    }
 
     &__title {
         display: block;
@@ -36,4 +47,9 @@
     &__text {
         font-size: 1.7rem;
     }
+}
+
+
+@media (max-width: 840px) {
+        
 }

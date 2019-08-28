@@ -14,6 +14,11 @@
     grid-row-gap: 5rem;
     justify-content: center;
 
+    @media (max-width: 450px) {
+        grid-row-gap: 2rem;
+        padding: 5rem;
+    }
+
     &__links ul {
         margin-top: 2rem;
 
@@ -22,12 +27,27 @@
         padding: 0;
         display: flex;
 
+        @media (max-width: 450px) {
+            padding-left: 2rem;
+            flex-wrap: wrap;
+            width: 80vw;
+        }
+
         li:not(:first-of-type) {
             padding-left: 3rem;
+
+            @media (max-width: 450px) {
+                padding-left: 1.5rem;
+            }
         }
 
         li {
             font-size: 2rem;
+
+            @media (max-width: 450px) {
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
         }
 
         a {
@@ -47,7 +67,12 @@
         }
     }
 
-    &__logo {
+    .heading-2.footer__logo {
         justify-self: center;
+
+        @media (max-width: 450px) {
+            font-size: 3rem;
+            padding: 1.8rem 0;
+        }
     }
 }

@@ -31,9 +31,8 @@
             text-decoration: none;
         }
 
-        a>span {
+        a > span {
             text-decoration: none;
-            width: 112px;
             font-size: 4rem;
             color: rgb(223, 198, 146);
             font-family: adobe-garamond-pro, serif;
@@ -94,9 +93,21 @@
             margin-bottom: 4px;
             margin-top: 9px;
 
-            a img {
+            @media (max-width: 775px) { 
+                font-size: 2rem;
+                margin-top: -10px !important;
+            }
+
+            a {
                 width: 100px;
-                margin-left: -5px !important;
+                font-size: 1rem !important;
+                width: 100%;
+
+                @media (max-width: 775px) { 
+                    span {
+                        font-size: 3.2rem;
+                    }
+                }
             }
         }
     }

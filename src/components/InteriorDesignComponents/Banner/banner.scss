@@ -35,17 +35,19 @@
         max-width: 350px;
         position: absolute;
         right: 0;
-        bottom: 75px;
+        bottom: 125px;
 
         float: right;
         margin-right: 5%;
+        border-bottom: .4rem solid $color-primary;
+        background-color: rgb(248, 248, 248);
 
         h3 {
             position: absolute;
 
             background-color: $color-secondary-dark;
             margin-left: -30px;
-            margin-top: -15px;
+            margin-top: -30px;
 
             padding: 0 15px;
             display: inline-block;

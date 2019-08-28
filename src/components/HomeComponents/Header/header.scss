@@ -16,33 +16,9 @@
     grid-row-gap: 1.5rem;
     justify-content: center;
 
-
-    &__logo {
-        height: 3rem;
-        justify-self: center;
-    }
-
     &__btn {
         align-self: start;
         justify-self: start;
-    }
-
-    &__seenon-text {
-        display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-column-gap: 1.5rem;
-        align-items: center;
-
-        font-size: 1.6rem;
-        color: $color-grey-light-2;
-
-        &::before,
-        &::after {
-            content: "";
-            height: 1px;
-            display: block;
-            background-color: currentColor;
-        }
     }
 
     &__logos {
@@ -56,6 +32,26 @@
             max-height: 3.5rem;
             max-width: 100%;
             filter: brightness(70%);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        border-radius: 0 0 0 54%;
+    }
+
+    @media (max-width: 700px) {
+        border-radius: 0 0 0 50%;
+
+        .heading-1 {
+            font-size: 10vw;
+        }
+    }
+
+    
+    @media (max-width: 600px) {
+        .header__btn {
+            font-size: 3vw;
+            padding: 1.1rem 2rem;
         }
     }
 }
