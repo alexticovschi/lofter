@@ -1,0 +1,54 @@
+@import "../../../sass/base";
+
+.designers {
+    grid-column: center-start / center-end;
+
+    border-top: .8rem solid $color-primary;
+    border-right: .8rem solid $color-primary;
+
+    margin: 5rem 0;
+
+    h3 {
+        text-align: start;
+        color: rgb(34, 32, 32);
+    }
+}
+
+.designer-wrapper {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 5rem;
+    align-items: start;
+
+    margin: 4rem 6rem;
+
+    &__title {
+        display: block;
+        color: $color-primary;
+    }
+}
+
+.designer-card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+    .designer-name {
+        padding: 1rem 2rem;
+        width: 110%;
+        background-color: $color-secondary-dark;
+        transform: translateY(-1rem);
+        z-index: 100;
+
+        color: rgb(255, 255, 255);
+    }
+
+    &--img {
+        width: 100%;
+        opacity: .8;
+    }
+}
