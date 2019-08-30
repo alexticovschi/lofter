@@ -17,7 +17,7 @@
     @media (max-width: 700px) {
         grid-column: full-start / full-end;
         grid-template-columns: 1fr;
-        grid-template-rows: .6fr 1fr;
+        grid-template-rows: .5fr 1fr;
 
         margin: 1rem 1rem;
     }
@@ -35,6 +35,8 @@
         width: 108%;
 
         @media (max-width: 700px) {
+            grid-row-gap: 2rem;
+
             transform: translate(0);
             width: 100%;
             background: transparent;
@@ -45,8 +47,8 @@
             color: $color-dark;
 
             @media (max-width: 500px) {
-                font-size: 2.9rem !important;
-                margin-bottom: -5rem;
+                font-size: 2.1rem !important;
+                // margin-bottom: -5rem;
             }
         }
 
@@ -55,7 +57,7 @@
             padding: 0 5rem;
 
             @media (max-width: 500px) {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 padding: 1rem 2rem;
             }
         }
