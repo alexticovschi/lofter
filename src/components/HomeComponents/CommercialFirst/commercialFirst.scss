@@ -42,7 +42,7 @@
 
         &--title {
             font-size: 3rem;
-            color: rgb(224, 187, 106);
+            color: $color-dark;
 
             @media (max-width: 500px) {
                 font-size: 2.7rem;
