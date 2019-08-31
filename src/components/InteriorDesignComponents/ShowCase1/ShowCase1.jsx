@@ -8,13 +8,12 @@ const ShowCase = () => {
   return (
     <section className="showcase1">
       <div className="showcase1__text">
-        <h2 className="showcase1-title">Showcase 1</h2>
+        <h2 className="showcase1__title">We Craft Elegant Spaces</h2>
         <div className="inner-text">
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            neque placeat aspernatur nostrum labore repellendus, voluptas
-            blanditiis tempore! Id impedit error provident consequatur illum.
+            We craft elegant, inspirational and distilled solutions to complex
+            problems through strategic thought, dynamic creativity and
+            technological excellence.
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import showcase2 from "../../../Resources/img/showcase2.jpg";
+import showcase2 from "../../../Resources/img/showcase2.jpeg";
 
 import "./showCase2.scss";
 
@@ -10,14 +10,14 @@ const ShowCase = () => {
       <img src={showcase2} className="showcase2__img" />
 
       <div className="showcase2__text">
-        <h2 className="showcase2-title">Showcase 2</h2>
+        <h2 className="showcase2__title">
+          Our Design Communicate Your Personal Stories
+        </h2>
 
         <div className="inner-text">
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            neque placeat aspernatur nostrum labore repellendus, voluptas
-            blanditiis tempore! Id impedit error provident consequatur illum.
+            From small-to large-scale projects, our dedicated team is here to
+            help you find the right products for your designs.
           </p>
         </div>
       </div>
