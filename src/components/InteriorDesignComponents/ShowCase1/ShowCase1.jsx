@@ -28,11 +28,11 @@ const ShowCase = () => {
           </div>
         </div>
 
-        {/* <Fade duration={2000}> */}
-        <div className="showcase1__img-wrapper">
-          <img src={showcase1} className="showcase1__img" />
-        </div>
-        {/* </Fade> */}
+        <Fade duration={2000}>
+          <div className="showcase1__img-wrapper">
+            <img src={showcase1} className="showcase1__img" />
+          </div>
+        </Fade>
       </section>
     </Fade>
   );
