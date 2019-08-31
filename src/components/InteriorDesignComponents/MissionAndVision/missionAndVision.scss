@@ -1,0 +1,53 @@
+@import "../../../sass/base";
+
+.mission-vision {
+    grid-column: center-start / center-end;
+
+    margin: 10rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 3rem;
+        padding: 3rem;
+    }
+
+    &__box-left {
+        transform: translateY(-7rem);
+        border: .5rem solid $color-primary;
+        background-color: #fff;
+        padding: 0 3rem 2rem 2rem;
+        width: 120%;
+    }
+
+    .mission,
+    .vision {
+
+        &__title {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+        }
+
+        &__text {
+            font-size: 2rem;
+            font-family: $font-display;
+
+            padding-right: 3rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        z-index: 10;
+        opacity: .7;
+    }
+
+    &__btn {
+        width: 20rem;
+    }
+}
