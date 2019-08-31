@@ -24,11 +24,14 @@
         grid-row: 2 / span 2;
 
         background: #fff;
+        width: 100%;
         color: $color-dark;
         opacity: 0.9;
 
         padding: 2rem 2rem;
-        transform: translateX(-6rem);
+
+        transform: translateX(-16rem);
+        margin-left: -7rem;
         line-height: 1.3em;
     }
 

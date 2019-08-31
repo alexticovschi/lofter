@@ -8,6 +8,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 
+    &__img-wrapper {
+        opacity: .7;
+    }
 
     &__title {
         display: grid;

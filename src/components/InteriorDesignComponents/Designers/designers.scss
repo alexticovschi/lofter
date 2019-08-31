@@ -8,8 +8,12 @@
 
     margin: 5rem 0;
 
-    h3 {
+    h2 {
         text-align: start;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-size: 5rem;
+        color: $color-dark;
         color: rgb(34, 32, 32);
     }
 }
