@@ -1,9 +1,10 @@
 import React from "react";
 
-import LogoBBC from "../../../Resources/img/logo-bbc.png";
-import LogoForbes from "../../../Resources/img/logo-forbes.png";
-import LogoTech from "../../../Resources/img/logo-techcrunch.png";
-import LogoBI from "../../../Resources/img/logo-bi.png";
+import LogoFineArt from "../../../Resources/img/logo-fineart.png";
+import LogoIcrave from "../../../Resources/img/logo-icrave.png";
+import LogoPen from "../../../Resources/img/logo-pen.png";
+import LogoLuxe from "../../../Resources/img/logo-luxe.png";
+import LogoInteriors from "../../../Resources/img/logo-interiors.png";
 
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
@@ -24,10 +25,11 @@ const Header = () => {
         </Fade>
         <div className="header__logos">
           <Zoom>
-            <img src={LogoBBC} alt="Seen on logo 1" />
-            <img src={LogoForbes} alt="Seen on logo 2" />
-            <img src={LogoTech} alt="Seen on logo 3" />
-            <img src={LogoBI} alt="Seen on logo 4" />
+            <img src={LogoIcrave} alt="Header logo 1" />
+            <img src={LogoLuxe} alt="Header logo 2" />
+            <img src={LogoFineArt} alt="Header logo 3" />
+            <img src={LogoPen} alt="Header logo 4" />
+            <img src={LogoInteriors} alt="Header logo 5" />
           </Zoom>
         </div>
       </header>
