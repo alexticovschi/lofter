@@ -18,7 +18,7 @@ const SideDrawer = props => {
           <a href="/interior-design">Interior Design</a>
         </li>
         <li>
-          <a href="/brochures">Brochures</a>
+          <a href="/gallery">Gallery</a>
         </li>
         <li>
           <a href="/blog">Blog</a>

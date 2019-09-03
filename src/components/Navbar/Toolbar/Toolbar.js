@@ -23,7 +23,7 @@ const Toolbar = props => (
               <Link to="/interior-design">Interior Design</Link>
             </li>
             <li>
-              <Link to="/brochures">Brochures</Link>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li>
               <Link to="/blog">Blog</Link>

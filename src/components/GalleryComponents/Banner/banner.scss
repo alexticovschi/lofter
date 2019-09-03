@@ -1,0 +1,53 @@
+@import "../../../sass/base";
+
+.gallery-banner {
+    grid-column: full-start / full-end;
+    background-image: linear-gradient(rgba($color-header, .60), rgba($color-header, .60)), url(../../../Resources/img/gallery-banner.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+
+    border-bottom: .5rem solid $color-primary;
+
+    &__title-box {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        align-content: center;
+        transform: translateX(14rem);
+
+        border: .5rem solid $color-primary;
+    }
+
+    &__title {
+        grid-row: 2 / span 2;
+
+        background: #fff;
+        width: 100%;
+        color: $color-dark;
+        opacity: 0.9;
+
+        padding: 2rem 2rem;
+        margin-left: 7rem;
+
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        line-height: 1.3em;
+    }
+
+    &__message {
+        display: grid;
+        grid-column: 4 / span 2;
+        grid-row: 3 / span 1;
+        height: 100%;
+
+        text-align: center;
+        font-size: 1.8vw;
+        line-height: 1.4em;
+        letter-spacing: .3rem;
+    }
+
+}
