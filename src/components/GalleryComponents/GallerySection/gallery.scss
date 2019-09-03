@@ -1,0 +1,71 @@
+@import "../../../sass/base";
+
+.gallery {
+    display: grid;
+    grid-column: center-start / center-end;
+
+
+    &__title {
+        padding: 5rem 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+
+        border-bottom: .5rem solid $color-primary;
+        border-right: .5rem solid $color-primary;
+
+    }
+
+    /* The Masonry Container */
+    &__masonry {
+        grid-column: center-start / center-end;
+        column-gap: 1rem;
+    }
+
+    /* The Masonry Brick */
+    &__item {
+        position: relative;
+        padding: .8rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    /* Masonry on large screens */
+    @media only screen and (min-width: 1024px) {
+        &__masonry {
+            column-count: 3;
+        }
+    }
+
+    /* Masonry on medium-sized screens */
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+        &__masonry {
+            column-count: 3;
+        }
+    }
+
+    /* Masonry on small screens */
+    @media only screen and (max-width: 767px) and (min-width: 440px) {
+        &__masonry {
+            column-count: 2;
+        }
+    }
+
+    @media only screen and (max-width: 440px) and (min-width: 319px) {
+        grid-column: full-start / full-end !important;
+
+        &__masonry {
+            column-count: 2 !important;
+
+            margin: 0.8em .2em;
+            column-gap: .1em;
+        }
+
+        &__item {
+            position: relative;
+            margin: 0;
+        }
+    }
+}
