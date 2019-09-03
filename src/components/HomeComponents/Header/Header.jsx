@@ -5,6 +5,7 @@ import LogoIcrave from "../../../Resources/img/logo-icrave.png";
 import LogoPen from "../../../Resources/img/logo-pen.png";
 import LogoLuxe from "../../../Resources/img/logo-luxe.png";
 import LogoInteriors from "../../../Resources/img/logo-interiors.png";
+import LogoHudson from "../../../Resources/img/logo-hudson.png";
 
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
@@ -25,11 +26,12 @@ const Header = () => {
         </Fade>
         <div className="header__logos">
           <Zoom>
-            <img src={LogoIcrave} alt="Header logo 1" />
-            <img src={LogoLuxe} alt="Header logo 2" />
-            <img src={LogoFineArt} alt="Header logo 3" />
+            <img src={LogoLuxe} alt="Header logo 1" />
+            <img src={LogoHudson} alt="Header logo 2" />
+            <img src={LogoIcrave} alt="Header logo 3" />
             <img src={LogoPen} alt="Header logo 4" />
             <img src={LogoInteriors} alt="Header logo 5" />
+            <img src={LogoFineArt} alt="Header logo 6" />
           </Zoom>
         </div>
       </header>

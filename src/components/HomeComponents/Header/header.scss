@@ -12,9 +12,13 @@
 
     display: grid;
     grid-template-rows: 1fr min-content minmax(8rem, min-content) 1fr;
-    grid-template-columns: minmax(min-content, max-content);
+    grid-template-columns: minmax(94vw, max-content);
     grid-row-gap: 4rem;
     justify-content: center;
+
+    @media(max-width: 1200px) {
+        grid-template-columns: minmax(80vw, max-content);
+    }
 
     .heading-1 {
         align-self: center;
@@ -28,13 +32,14 @@
 
     &__logos {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 2.5rem;
         justify-items: center;
         align-items: center;
 
         @media (max-width: 1200px) {
-            grid-column-gap: .5rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 5rem;
         }
 
         img {
@@ -49,7 +54,7 @@
     }
 
     @media (max-width: 700px) {
-        border-radius: 0 0 0 50%;
+        border-radius: 0 0 0 45%;
 
 
         .heading-1 {
