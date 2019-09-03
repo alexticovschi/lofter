@@ -11,14 +11,19 @@
     border-radius: 0 0 0 40%;
 
     display: grid;
-    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-rows: 1fr min-content minmax(8rem, min-content) 1fr;
     grid-template-columns: minmax(min-content, max-content);
-    grid-row-gap: 1.5rem;
+    grid-row-gap: 4rem;
     justify-content: center;
 
+    .heading-1 {
+        align-self: center;
+        justify-self: center;
+    }
+
     &__btn {
-        align-self: start;
-        justify-self: start;
+        align-self: center;
+        justify-self: center;
     }
 
     &__logos {
@@ -27,6 +32,10 @@
         grid-column-gap: 2.5rem;
         justify-items: center;
         align-items: center;
+
+        @media (max-width: 1200px) {
+            grid-column-gap: .5rem;
+        }
 
         img {
             max-height: 5.5rem;
@@ -42,8 +51,10 @@
     @media (max-width: 700px) {
         border-radius: 0 0 0 50%;
 
+
         .heading-1 {
             font-size: 10vw;
+            margin-bottom: 0;
         }
     }
 
