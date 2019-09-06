@@ -13,7 +13,7 @@ const Designers = () => {
   return (
     <Fade delay={500}>
       <section className="designers">
-        <h2>Meet the Team</h2>
+        <h2 className="designers__title">Meet the Team</h2>
         <div className="designer-wrapper">
           <div className="designer-card">
             <img

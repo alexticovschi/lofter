@@ -10,6 +10,10 @@
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(6, 1fr);
 
+    @media(max-width: 475px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     &__title-box {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -18,6 +22,9 @@
 
         border: .5rem solid $color-primary;
 
+        @media(max-width: 475px) {
+            transform: translateX(10rem);
+        }
     }
 
     &__title {
@@ -33,6 +40,12 @@
         transform: translateX(-16rem);
         margin-left: -7rem;
         line-height: 1.3em;
+
+        @media(max-width: 475px) {
+            transform: translateX(-10rem);
+            margin-left: -7rem;
+            padding: 2rem 1.5rem;
+        }
     }
 
     &__message {
@@ -44,6 +57,10 @@
         font-size: 1.8vw;
         line-height: 1.4em;
         letter-spacing: .3rem;
+
+        @media(max-width: 475px) {
+            font-size: 2.8vw;
+        }
     }
 
     &__case-study-box {
@@ -58,6 +75,10 @@
         margin-right: 5%;
         border-bottom: .4rem solid $color-primary;
         background-color: rgb(248, 248, 248);
+
+        @media(max-width: 1200px) {
+            display: none;
+        }
 
         h3 {
             position: absolute;

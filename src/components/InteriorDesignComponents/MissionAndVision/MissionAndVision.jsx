@@ -30,7 +30,9 @@ const MissionAndVision = () => {
               </p>
             </div>
 
-            <button className="mission-vision__btn btn">View More</button>
+            <button className="mission-vision__btn mission-vision--btn btn">
+              View More
+            </button>
           </div>
         </div>
 

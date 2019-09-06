@@ -3,15 +3,32 @@
 .specialization {
 
     grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
 
     margin-bottom: 10rem;
 
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
+
+    @media(max-width: 1850px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width: 1600px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media(max-width: 1200px) {
+        grid-template-rows: repeat(2, min-content);
+    }
 
     &__box-right {
         display: grid;
         grid-template-rows: 1fr 1.6fr;
+
+        @media(max-width: 1200px) {
+            grid-template-rows: min-content 1fr;
+            grid-row: 1;
+        }
     }
 
     &__title {
@@ -22,11 +39,30 @@
         font-size: 5rem;
         color: $color-dark;
         letter-spacing: 1rem;
+
+        @media(max-width: 1600px) {
+            grid-template-columns: 1fr;
+            transform: translateX(0);
+            text-align: center;
+        }
+
+        @media(max-width: 1200px) {
+            font-size: 3rem;
+        }
+
+        @media(max-width: 600px) {
+            font-size: 5vw;
+            padding: 0 1rem;
+        }
     }
 
     &__img {
         width: 100%;
         opacity: .7;
+
+        @media(max-width: 1200px) {
+            grid-row: 2;
+        }
     }
 
     &__icons {
@@ -37,6 +73,17 @@
 
         grid-gap: 3rem;
         margin: 0 2rem;
+
+
+        @media(max-width: 1200px) {
+            grid-row: 2;
+        }
+
+        @media(max-width: 800px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            padding: 2rem 0;
+        }
     }
 
     &__icon {
@@ -49,12 +96,25 @@
         border: .1rem solid $color-primary;
         width: 100%;
 
+
+        @media(max-width: 500px) {
+            padding: 2rem;
+        }
+
+        @media(max-width: 350px) {
+            padding: 1.8rem 1rem;
+        }
+
         p {
             justify-self: center;
 
             font-family: 'Work Sans', sans-serif;
             font-weight: 500;
             font-size: 1.6rem;
+
+            @media(max-width: 500px) {
+                font-size: 1.1rem;
+            }
         }
 
         &:hover {
