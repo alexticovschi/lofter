@@ -58,7 +58,7 @@
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
-  transition: all .2s;
+  transition: ease .4s;
 
   &:hover {
     background-color: $color-secondary-dark;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import LogoFineArt from "../../../Resources/img/logo-fineart.png";
 import LogoIcrave from "../../../Resources/img/logo-icrave.png";
@@ -22,7 +23,11 @@ const Header = () => {
           <h1 className="heading-1 mb-sm">Interior design service</h1>
         </Slide>
         <Fade delay={700}>
-          <button className="btn header__btn">View our showrooms</button>
+          <button className="btn header__btn">
+            <Link to="/gallery" className="header__btn">
+              View our projects
+            </Link>
+          </button>
         </Fade>
         <div className="header__logos">
           <Zoom>
