@@ -14,6 +14,21 @@
 
         border-bottom: 0.5rem solid $color-primary;
         border-right: 0.5rem solid $color-primary;
+
+        @media(max-width: 1500px) {
+            margin-left: 0;
+        }
+
+        @media(max-width: 900px) {
+            text-align: center;
+            font-size: 4vw;
+        }
+
+        @media(max-width: 445px) {
+            margin: 0 2rem;
+            border-bottom: 0.3rem solid $color-primary;
+            border-right: 0.3rem solid $color-primary;
+        }
     }
 
     /* The Masonry Container */

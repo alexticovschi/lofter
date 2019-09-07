@@ -19,6 +19,20 @@
         transform: translateX(14rem);
 
         border: .5rem solid $color-primary;
+
+        @media (max-width: 1280px) {
+            transform: translateX(-10rem);
+        }
+
+        @media (max-width: 785px) {
+            transform: translateX(-20rem);
+            margin: 0 4rem;
+        }
+
+        @media (max-width: 350px) {
+            transform: translateX(-23rem);
+            margin: 0 8rem;
+        }
     }
 
     &__title {
@@ -36,6 +50,34 @@
         text-transform: uppercase;
         letter-spacing: 1rem;
         line-height: 1.3em;
+
+        @media (max-width: 1280px) {
+            padding: 2rem 5rem;
+        }
+
+        @media(max-width: 900px) {
+            font-size: 4vw;
+            display: grid;
+            align-content: center;
+        }
+
+        @media(max-width: 700px) {
+            font-size: 5.5vw;
+            padding: 1.6rem 6rem;
+            margin-left: 4rem;
+        }
+
+        @media(max-width: 420px) {
+            font-size: 5vw;
+            padding: 3rem 5rem;
+            margin-left: 3rem;
+        }
+
+        @media (max-width: 350px) {
+            margin-left: 2.4rem;
+
+        }
+
     }
 
     &__message {
