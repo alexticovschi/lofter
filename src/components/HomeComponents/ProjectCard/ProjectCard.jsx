@@ -9,7 +9,7 @@ const ProjectCard = ({ children, imgSrc, projectName }) => {
 
         <h5 className="project__name">{projectName}</h5>
         <div className="project__description">{children}</div>
-        <button className="btn project__btn">Get in Touch</button>
+        <button className="btn project__btn">View Project</button>
       </div>
     </Fade>
   );
