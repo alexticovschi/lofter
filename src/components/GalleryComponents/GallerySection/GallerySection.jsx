@@ -24,35 +24,33 @@ import "./gallery.scss";
 
 const GallerySection = () => {
   return (
-    <Fade delay={1500}>
-      <section className="gallery">
-        <div>
-          <h1 className="gallery__title">
-            <Fade left delay={2000}>
-              Photos from recent projects
-            </Fade>
-          </h1>
-          <div className="gallery__masonry">
-            <GalleryItem source={gal1} />
-            <GalleryItem source={gal2} />
-            <GalleryItem source={gal3} />
-            <GalleryItem source={gal4} />
-            <GalleryItem source={gal5} />
-            <GalleryItem source={gal6} />
-            <GalleryItem source={gal7} />
-            <GalleryItem source={gal8} />
-            <GalleryItem source={gal9} />
-            <GalleryItem source={gal10} />
-            <GalleryItem source={gal11} />
-            <GalleryItem source={gal12} />
-            <GalleryItem source={gal13} />
-            <GalleryItem source={gal14} />
-            <GalleryItem source={gal15} />
-            <GalleryItem source={gal16} />
-          </div>
+    <section className="gallery">
+      <div>
+        <h1 className="gallery__title">
+          <Fade left delay={500}>
+            Photos from recent projects
+          </Fade>
+        </h1>
+        <div className="gallery__masonry">
+          <GalleryItem source={gal1} />
+          <GalleryItem source={gal2} />
+          <GalleryItem source={gal3} />
+          <GalleryItem source={gal4} />
+          <GalleryItem source={gal5} />
+          <GalleryItem source={gal6} />
+          <GalleryItem source={gal7} />
+          <GalleryItem source={gal8} />
+          <GalleryItem source={gal9} />
+          <GalleryItem source={gal10} />
+          <GalleryItem source={gal11} />
+          <GalleryItem source={gal12} />
+          <GalleryItem source={gal13} />
+          <GalleryItem source={gal14} />
+          <GalleryItem source={gal15} />
+          <GalleryItem source={gal16} />
         </div>
-      </section>
-    </Fade>
+      </div>
+    </section>
   );
 };
 
