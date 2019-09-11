@@ -1,0 +1,49 @@
+@import "../../../sass/base";
+
+.service {
+    margin: 10rem 0;
+    display: grid;
+    grid-column: center-start / center-end;
+
+    &__title {
+        display: grid;
+        grid-template-rows: 1fr;
+        text-align: center;
+        padding: 5rem 0;
+        margin: 1rem 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        color: $color-dark;
+
+        @media(max-width: 900px) {
+            font-size: 4vw;
+        }
+
+        @media(max-width: 445px) {
+            // margin: 2rem 2rem;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-gap: 4rem;
+    }
+
+
+    @media (max-width: 800px) {
+        grid-column: full-start / full-end;
+        grid-row-gap: 4rem;
+
+        margin: 10rem 1.5rem;
+    }
+
+    @media (max-width: 700px) {
+        grid-column: full-start / full-end;
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+        grid-row-gap: 4rem;
+
+        margin: 10rem 1.5rem;
+    }
+}
