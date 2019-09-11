@@ -4,7 +4,7 @@
     margin: 10rem 0;
     display: grid;
     grid-column: center-start / center-end;
-
+    
     &__title {
         display: grid;
         grid-template-rows: 1fr;
@@ -21,7 +21,11 @@
         }
 
         @media(max-width: 445px) {
-            // margin: 2rem 2rem;
+            margin: 0;
+            font-size: 4.2vw;
+            padding-top: 0;
+            padding-bottom: 2rem;
+
         }
     }
 

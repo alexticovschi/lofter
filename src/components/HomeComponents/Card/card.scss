@@ -35,7 +35,7 @@
         z-index: 3;
 
         width: 70%;
-        border: .4rem solid rgb(223, 198, 146);
+        border: .4rem solid $color-primary;
 
         text-align: center;
         padding: 1rem;
@@ -48,8 +48,9 @@
         transform: translateY(50%);
 
         @media (max-width: 420px) {
-            font-size: 1.5rem;
-            padding: .6rem;
+            font-size: 1.6rem;
+            padding: .5rem;
+            border: .3rem solid $color-primary;
         }
     }
 
@@ -75,5 +76,10 @@
     &__btn {
         grid-column: 1 / -1;
         grid-row: 3;
+
+        @media (max-width: 420px) {
+            font-size: 1.2rem !important;
+            padding: 1.3rem !important;
+        }
     }
 }
