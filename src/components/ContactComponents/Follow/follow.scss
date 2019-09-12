@@ -1,0 +1,122 @@
+@import "../../../sass/base";
+
+.follow {
+    grid-column: center-start / center-end;
+
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__box-left {
+        background-color: rgb(248, 248, 240);
+        height: 100%;
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    &__logo-title {
+        padding: 3rem 0;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        text-align: center;
+
+        color: rgb(206, 180, 120);
+        color: $color-primary;
+        font-size: 4.5rem;
+        align-self: center;
+
+    }
+
+    &__title {
+        padding: 3rem 0;
+        font-size: 3.5rem;
+        color: $color-dark;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        text-align: center;
+
+        align-self: center;
+    }
+
+    &__social-icons {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5rem;
+
+        ion-icon {
+            font-size: 44px;
+            fill: $color-primary;
+            transition: all .6s;
+
+            &:hover {
+                fill: $color-primary-dark;
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+    }
+
+    &__grid-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: .3rem;
+    }
+
+    &__item {
+        overflow: hidden;
+
+        &--1 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        &--2 {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        &--3 {
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        &--4 {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        &--5 {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        &--6 {
+            grid-column: 3 / span 1;
+            grid-row: 2 / span 1;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+        transition: 0.8s ease;
+        opacity: 0.85;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+
+}
