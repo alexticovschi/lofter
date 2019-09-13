@@ -42,18 +42,23 @@
         }
 
         &--title {
+            padding: 3rem 0;
             font-size: 3rem;
             color: $color-dark;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            text-align: center;
 
             @media (max-width: 500px) {
-                font-size: 2.1rem;
+                font-size: 2rem;
                 padding: 1rem 0;
+                letter-spacing: .6rem;
             }
         }
 
         &--content {
             font-size: 2rem;
-            padding: 0 3rem;
+            padding: 0 4rem;
 
             @media (max-width: 500px) {
                 font-size: 1.5rem;

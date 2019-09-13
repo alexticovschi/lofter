@@ -4,7 +4,7 @@
     margin: 10rem 0;
     display: grid;
     grid-column: center-start / center-end;
-    
+
     &__title {
         display: grid;
         grid-template-rows: 1fr;
@@ -17,12 +17,12 @@
         color: $color-dark;
 
         @media(max-width: 900px) {
-            font-size: 4vw;
+            font-size: 5vw;
         }
 
         @media(max-width: 445px) {
             margin: 0;
-            font-size: 4.2vw;
+            font-size: 5.5vw;
             padding-top: 0;
             padding-bottom: 2rem;
 

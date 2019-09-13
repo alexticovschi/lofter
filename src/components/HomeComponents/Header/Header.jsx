@@ -19,9 +19,9 @@ const Header = () => {
     <Fade>
       <header className="header">
         <span></span>
-        <Slide left>
+        <Fade top delay={700}>
           <h1 className="heading-1 mb-sm">Interior design service</h1>
-        </Slide>
+        </Fade>
         <Fade delay={700}>
           <button className="btn header__btn">
             <Link to="/gallery" className="header__btn">
