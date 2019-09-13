@@ -1,0 +1,54 @@
+@import "../../../sass/base";
+
+@mixin shrinkLabel {
+    top: -2.2rem;
+    font-size: 1.4rem;
+    color: $main-color;
+}
+
+.form-group {
+    position: relative;
+    margin: 4.5rem 0;
+
+    &__input {
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 1.8rem;
+        padding: 1rem 1rem 1rem .5rem;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        padding-left: 1.5rem;
+        border: .1rem solid $sub-color;
+        margin: 2.5rem 0;
+
+        &:focus {
+            // outline: none;
+            outline-color: $color-primary !important;
+            border-color: rgb(80, 80, 80);
+        }
+
+        &:focus~.form-group__input-label {
+            @include shrinkLabel();
+        }
+    }
+
+    &__input-label {
+        color: $sub-color;
+        font-size: 1.5rem;
+        font-weight: normal;
+        position: absolute !important;
+        pointer-events: none;
+        left: 1.5rem;
+        top: 1rem;
+        transition: 300ms ease all;
+
+        &.shrink {
+            @include shrinkLabel();
+        }
+    }
+
+
+}

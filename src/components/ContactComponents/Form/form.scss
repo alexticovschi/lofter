@@ -1,0 +1,54 @@
+@import "../../../sass/base";
+
+.contact-form {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+
+    margin: 5rem 0;
+
+    &__box-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .6fr 1fr 3fr;
+
+        &__title {
+            padding-top: 3rem;
+            font-size: 3rem;
+            color: $color-dark;
+            text-transform: uppercase;
+            letter-spacing: .8rem;
+            text-align: left;
+        }
+
+        &__address,
+        &__phone-email,
+        &__info {
+            font-size: 1.9rem;
+        }
+
+        &__address {}
+
+        &__phone-email {}
+
+        &__info {
+            padding-right: 2rem;
+        }
+
+    }
+
+    &__title {
+        padding: 3rem 0;
+        font-size: 3rem;
+        color: $color-dark;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+        text-align: center;
+    }
+}
+
+.select {
+    text-align: left;
+    width: 60%;
+    font-size: 1.6rem;
+}
