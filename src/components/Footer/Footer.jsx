@@ -17,71 +17,73 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* <h2 className="heading-2 footer__logo">Lofter Interiors</h2> */}
-
       <div className="footer__container">
-        <div className="footer__posts">
-          <h3 className="footer__posts__title">Recent Posts</h3>
-          <div className="footer__posts__container">
-            <div className="footer__post footer__post--1">
-              <img
-                className="footer__post__post-img"
-                src={blogImg1}
-                alt="footer post 1"
-              />
+        <Fade>
+          <div className="footer__posts">
+            <h3 className="footer__posts__title">Recent Posts</h3>
+            <div className="footer__posts__container">
+              <div className="footer__post footer__post--1">
+                <img
+                  className="footer__post__post-img"
+                  src={blogImg1}
+                  alt="footer post 1"
+                />
 
-              <div className="footer__post__post-content">
-                <a href="#" className="footer__post__post-title">
-                  Bedroom Ideas from Interior Designers
-                </a>
-                <p>25 Sep 24 Comments</p>
+                <div className="footer__post__post-content">
+                  <a href="#" className="footer__post__post-title">
+                    Bedroom Ideas from Interior Designers
+                  </a>
+                  <p>25 Sep 24 Comments</p>
+                </div>
               </div>
-            </div>
-            <div className="footer__post footer__post--2">
-              <img
-                className="footer__post__post-img"
-                src={blogImg2}
-                alt="footer post 2"
-              />
-              <div className="footer__post__post-content">
-                <a href="#" className="footer__post__post-title">
-                  Home Decorating Trends in 2019
-                </a>
+              <div className="footer__post footer__post--2">
+                <img
+                  className="footer__post__post-img"
+                  src={blogImg2}
+                  alt="footer post 2"
+                />
+                <div className="footer__post__post-content">
+                  <a href="#" className="footer__post__post-title">
+                    Home Decorating Trends in 2019
+                  </a>
 
-                <p>25 Sep 5 Comments</p>
+                  <p>25 Sep 5 Comments</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Fade>
 
         <div className="footer__useful-links">
-          <h3 className="footer__useful-links__title">Useful links</h3>
-          <div className="footer__links">
-            <ul>
-              {/* <li>
-                <Link to="/">Home</Link>
-              </li> */}
-              <li>
-                <Link to="/interior-design">Interior Design</Link>
-              </li>
-              <li>
-                <Link to="/gallery">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
+          <Fade>
+            <h3 className="footer__useful-links__title">Useful links</h3>
+            <div className="footer__links">
+              <ul>
+                <li>
+                  <Link to="/interior-design">Interior Design</Link>
+                </li>
+                <li>
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </div>
+          </Fade>
         </div>
 
         <div className="footer__recent-works">
-          <h3 className="footer__recent-works__title">Recent Works</h3>
+          <Fade>
+            <h3 className="footer__recent-works__title">Recent Works</h3>
+          </Fade>
+
           <div className="footer__grid-images">
             <Fade>
               <figure className="footer__item footer__item--1">
