@@ -7,6 +7,16 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+    @media(max-width: 1050px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media(max-width:900px) {
+        grid-column: full-start / full-end;
+        margin: 0 2rem;
+    }
+
+
     &__box-left {
         background-color: rgb(248, 248, 240);
         height: 100%;
@@ -14,6 +24,10 @@
 
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
+
+        @media(max-width:900px) {
+            grid-template-rows: .1fr .1fr .8fr;
+        }
     }
 
     &__logo-title {
@@ -27,6 +41,13 @@
         font-size: 4.5rem;
         align-self: center;
 
+        @media(max-width:900px) {
+            font-size: 3.5rem;
+        }
+
+        @media(max-width:500px) {
+            font-size: 3rem;
+        }
     }
 
     &__title {
@@ -37,7 +58,13 @@
         letter-spacing: 1rem;
         text-align: center;
 
-        align-self: center;
+        @media(max-width:900px) {
+            font-size: 3rem;
+        }
+
+        @media(max-width:500px) {
+            font-size: 2.5rem;
+        }
     }
 
     &__social-icons {
@@ -49,9 +76,13 @@
         grid-gap: .5rem;
 
         ion-icon {
-            font-size: 44px;
+            font-size: 4.4rem;
             fill: $color-primary;
             transition: all .6s;
+
+            @media(max-width:500px) {
+                font-size: 3.4rem;
+            }
 
             &:hover {
                 fill: $color-primary-dark;
