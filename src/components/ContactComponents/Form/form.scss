@@ -46,6 +46,15 @@
             font-size: 1.9rem;
         }
 
+        @media(max-width: 500px) {
+
+            &__address,
+            &__phone-email,
+            &__info {
+                font-size: 1.5rem;
+            }
+        }
+
         &__address {}
 
         &__phone-email {}
