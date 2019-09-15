@@ -16,9 +16,29 @@
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         align-content: center;
+        justify-items: center;
         transform: translateX(-14rem);
 
         border: .5rem solid $color-primary;
+
+        @media (max-width: 1280px) {
+            transform: translateX(10rem);
+        }
+
+        @media (max-width: 785px) {
+            transform: translateX(0rem);
+            margin: 0 2rem;
+        }
+
+        @media (max-width: 500px) {
+            transform: translateX(-5rem);
+            margin: 0 2rem;
+        }
+
+        @media (max-width: 350px) {
+            transform: translateX(-12rem);
+            margin: 0 8rem;
+        }
     }
 
     &__title {
@@ -36,6 +56,31 @@
         text-transform: uppercase;
         letter-spacing: 1rem;
         line-height: 1.3em;
+
+        @media (max-width: 1280px) {
+            padding: 2rem 5rem;
+        }
+
+        @media(max-width: 900px) {
+            font-size: 4.5vw;
+            display: grid;
+            align-content: center;
+        }
+
+        @media(max-width: 700px) {
+            padding: .6rem 4rem;
+            margin-left: 4rem;
+        }
+
+        @media(max-width: 420px) {
+            font-size: 5vw;
+            padding: 3rem 5rem;
+            margin-left: 4rem;
+        }
+
+        @media (max-width: 350px) {
+            margin-left: 2.4rem;
+        }
     }
 
     &__message {

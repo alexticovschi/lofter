@@ -11,9 +11,7 @@ const Banner = () => {
         <div className="contact-banner__message">
           <div className="contact-banner__title-box">
             <Fade left delay={500}>
-              <h1 className="contact-banner__title">
-                Contact Us
-              </h1>
+              <h1 className="contact-banner__title">Contact</h1>
             </Fade>
           </div>
         </div>
