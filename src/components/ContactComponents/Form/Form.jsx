@@ -78,7 +78,7 @@ class Form extends Component {
           </div>
         </div>
         <form className="form" onSubmit={this.handleSubmit}>
-          <h2 className="contact-form__title">PROJECT ENQUIRY FORM</h2>
+          <h2 className="form__title">PROJECT ENQUIRY FORM</h2>
 
           <FormInput
             type="text"
@@ -154,6 +154,8 @@ class Form extends Component {
             label="Additional Information"
             required
           />
+
+          <button className="btn form__btn">Submit</button>
         </form>
       </section>
     );

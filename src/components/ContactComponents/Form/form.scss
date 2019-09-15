@@ -59,7 +59,9 @@
         }
 
     }
+}
 
+.form {
     &__title {
         padding: 3rem 0;
         font-size: 3rem;
@@ -78,14 +80,18 @@
             font-size: 2rem;
         }
     }
-}
 
-.select {
-    text-align: left;
-    width: 60%;
-    font-size: 1.6rem;
+    .select {
+        text-align: left;
+        width: 60%;
+        font-size: 1.6rem;
 
-    @media(max-width:450px) {
-        width: 90%;
+        @media(max-width:450px) {
+            width: 90%;
+        }
+    }
+
+    &__btn {
+        width: 20rem;
     }
 }
