@@ -7,21 +7,17 @@ import MissionAndVision from "../../components/InteriorDesignComponents/MissionA
 import Specialization from "../../components/InteriorDesignComponents/Specialization/Specialization";
 import Designers from "../../components/InteriorDesignComponents/Designers/Designers";
 
-import Layout from "../../components/HOC/Layout";
-
 import "./interiorDesign.scss";
 
 const InteriorDesign = () => {
   return (
     <div className="interior-design-container">
-      <Layout>
-        <Banner />
-        <ShowCase1 />
-        <ShowCase2 />
-        <MissionAndVision />
-        <Specialization />
-        <Designers />
-      </Layout>
+      <Banner />
+      <ShowCase1 />
+      <ShowCase2 />
+      <MissionAndVision />
+      <Specialization />
+      <Designers />
     </div>
   );
 };

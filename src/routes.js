@@ -5,14 +5,18 @@ import InteriorDesign from "./pages/InteriorDesign/InteriorDesign";
 import Gallery from "./pages/Gallery/Gallery";
 import Contact from "./pages/Contact/Contact";
 
+import Layout from "../src/components/HOC/Layout";
+
 const Routes = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/interior-design" component={InteriorDesign} />
-      <Route path="/gallery" component={Gallery} />
-      <Route path="/contact" component={Contact} />
-    </Switch> 
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/interior-design" component={InteriorDesign} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/contact" component={Contact} />
+      </Switch> 
+    </Layout>
   );
 };
 
