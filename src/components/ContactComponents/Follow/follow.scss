@@ -3,7 +3,7 @@
 .follow {
     grid-column: center-start / center-end;
 
-    margin: 10rem 0;
+    margin: 10rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -13,7 +13,7 @@
 
     @media(max-width:900px) {
         grid-column: full-start / full-end;
-        margin: 0 2rem;
+        margin: 10rem 2rem;
     }
 
     @media(max-width:500px) {

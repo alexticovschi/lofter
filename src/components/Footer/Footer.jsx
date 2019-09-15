@@ -9,8 +9,8 @@ import img4 from "../../Resources/img/gal15.jpg";
 import img5 from "../../Resources/img/gal16.jpg";
 import img6 from "../../Resources/img/gal9.jpg";
 
-import blogImg1 from "../../Resources/img/gal7.jpg";
-import blogImg2 from "../../Resources/img/gal12.jpg";
+import blogImg1 from "../../Resources/img/post1.jpg";
+import blogImg2 from "../../Resources/img/post2.jpg";
 
 import "./footer.scss";
 

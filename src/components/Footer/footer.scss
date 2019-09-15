@@ -2,27 +2,26 @@
 
 .footer {
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba($color-header, .70), rgba($color-header, .70)), url(../../Resources/img/banner.jpg);
+    background-image: linear-gradient(rgba($color-header, .80), rgba($color-header, .80)), url(../../Resources/img/banner.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    padding: 0 3rem;
 
     width: 100%;
+    height: 100%;
+
+    @media(max-width: 500px) {
+        padding: 0;
+    }
 
     &__container {
-        margin: 2rem 2rem;
         grid-column: full-start / full-end !important;
-        height: 100%;
-        padding: 0 5rem;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-
-        background-color: rgba(42, 62, 71, 0.5);
-
         @media(max-width: 1200px) {
-            grid-template-columns: 1fr .5fr .8fr;
+            grid-template-columns: 1fr 1fr 1fr;
             padding: 0;
         }
 
@@ -31,7 +30,7 @@
             grid-template-rows: repeat(3, min-content);
         }
 
-        @media(max-width: 500px) {
+        @media(max-width: 700px) {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, min-content);
             margin: 0;
@@ -44,30 +43,42 @@
         display: grid;
         grid-template-rows: .4fr 1fr .2fr;
         justify-items: center;
-
-        @media(max-width: 500px) {
-            grid-template-rows: .5fr 1fr;
-            margin-top: 1rem;
-        }
+        align-content: center;
 
         &__title {
             color: $color-primary;
-            font-size: 3rem;
+            font-size: 2.1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: .8rem;
+            text-align: center;
             align-self: center;
 
-            @media(max-width: 1000px) {
-                font-size: 2.5rem;
+            @media(max-width: 1200px) {
+                font-size: 2rem;
             }
 
+            @media(max-width: 700px) {
+                margin-top: 3rem;
+            }
         }
 
         &__container {
             display: grid;
             grid-gap: 1.5rem;
-            padding: 0 5rem;
 
             @media(max-width: 900px) {
                 padding: 0;
+            }
+
+            @media(max-width: 700px) {
+                margin-top: 3rem;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media(max-width: 500px) {
+                grid-template-columns: 1fr;
+                margin-top: 2rem;
             }
         }
     }
@@ -77,14 +88,24 @@
         grid-template-columns: .4fr 1fr;
         height: 100%;
 
-        @media(max-width: 1000px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr .2fr;
+        @media(min-width: 659px) {
+            max-height: 10rem;
         }
 
         @media(max-width: 900px) {
             grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: 1fr;
             padding: 0 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media(max-width: 660px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        @media(max-width: 500px) {
+            grid-template-columns: 1fr 1fr;
         }
 
         &__post-content {
@@ -128,7 +149,7 @@
             }
 
             @media(max-width: 1000px) {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
             }
         }
 
@@ -136,6 +157,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            @media(max-width: 660px) {
+                height: auto;
+            }
         }
     }
 
@@ -153,11 +178,15 @@
 
         &__title {
             color: $color-primary;
-            font-size: 3rem;
+            font-size: 2.1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: .8rem;
+            text-align: center;
             align-self: center;
 
-            @media(max-width: 1000px) {
-                font-size: 2.5rem;
+            @media(max-width: 1200px) {
+                font-size: 2rem;
             }
         }
     }
@@ -211,10 +240,14 @@
 
         &__title {
             color: $color-primary;
-            font-size: 3rem;
+            font-size: 2.1rem;
+            font-weight: 300;
+            align-self: center;
+            text-transform: uppercase;
+            letter-spacing: .8rem;
 
-            @media(max-width: 1000px) {
-                font-size: 2.5rem;
+            @media(max-width: 1200px) {
+                font-size: 2rem;
             }
         }
 
