@@ -21,7 +21,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: .5fr 1fr;
 
-        margin: 1rem 1rem;
+        margin: 1rem 1rem 10rem 1rem;
     }
 
     .article__container-second {
@@ -45,9 +45,6 @@
         }
 
         &--title {
-            // font-size: 3.5rem !important;
-            // color: $color-dark;
-
             padding: 0 4rem;
             font-size: 3rem;
             color: $color-dark;

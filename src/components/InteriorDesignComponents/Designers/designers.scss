@@ -6,7 +6,7 @@
     border-top: .8rem solid $color-primary;
     border-right: .8rem solid $color-primary;
 
-    margin: 5rem 0;
+    margin: 5rem 0 10rem 0;
 
     @media(max-width: 800px) {
         grid-column: full-start / full-end;
@@ -17,6 +17,10 @@
         border-top: .3rem solid $color-primary;
         border-right: .3rem solid $color-primary;
         margin-top: 0;
+    }
+
+    @media(max-width: 510px) {
+        margin-bottom: 6rem;
     }
 
     &__title {
