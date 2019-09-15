@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 
 import Banner from "../../components/InteriorDesignComponents/Banner/Banner";
 import ShowCase1 from "../../components/InteriorDesignComponents/ShowCase1/ShowCase1";
@@ -9,19 +7,21 @@ import MissionAndVision from "../../components/InteriorDesignComponents/MissionA
 import Specialization from "../../components/InteriorDesignComponents/Specialization/Specialization";
 import Designers from "../../components/InteriorDesignComponents/Designers/Designers";
 
+import Layout from "../../components/HOC/Layout";
+
 import "./interiorDesign.scss";
 
 const InteriorDesign = () => {
   return (
     <div className="interior-design-container">
-      <Navbar />
-      <Banner />
-      <ShowCase1 />
-      <ShowCase2 />
-      <MissionAndVision />
-      <Specialization />
-      <Designers />
-      <Footer />
+      <Layout>
+        <Banner />
+        <ShowCase1 />
+        <ShowCase2 />
+        <MissionAndVision />
+        <Specialization />
+        <Designers />
+      </Layout>
     </div>
   );
 };
