@@ -13,8 +13,7 @@ const Header = () => {
           <div className="banner__title-box">
             <Fade delay={500}>
               <h1 className="banner__title">
-                Beautifully designed interior design projects by the Best
-                Interior Designers
+                Beautifully designed interior design projects
               </h1>
             </Fade>
           </div>

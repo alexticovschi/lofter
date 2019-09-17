@@ -22,8 +22,13 @@
 
         border: .5rem solid $color-primary;
 
+        @media(max-width: 1300px) {
+            width: 60vw;
+        }
+
         @media(max-width: 475px) {
-            transform: translateX(10rem);
+            transform: translateX(6rem);
+            width: 80vw;
         }
     }
 
@@ -32,19 +37,29 @@
 
         background: #fff;
         width: 100%;
-        color: $color-dark;
         opacity: 0.9;
-
-        padding: 2rem 2rem;
+        padding: 4rem 0;
+        text-align: center;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        color: $color-dark;
 
         transform: translateX(-16rem);
         margin-left: -7rem;
         line-height: 1.3em;
 
+        @media(max-width: 1300px) {
+            font-size: 3.3rem;
+        }
+
         @media(max-width: 475px) {
             transform: translateX(-10rem);
-            margin-left: -7rem;
-            padding: 2rem 1.5rem;
+            margin-left: -4rem;
+            padding: 2rem 0rem;
+            width: 80vw;
+            font-size: 5vw;
+
         }
     }
 
