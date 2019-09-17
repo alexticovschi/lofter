@@ -1,0 +1,61 @@
+@import "../../../sass/base";
+
+.slider {
+    display: grid;
+    grid-column: center-start / center-end;
+    margin: 12rem 0;
+
+    @media (max-width: 800px) {
+        grid-column: full-start / full-end;
+        margin: 8rem 0;
+    }
+
+    &__title {
+        display: grid;
+        grid-template-rows: 1fr;
+        text-align: center;
+        padding: 5rem 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        color: $color-dark;
+
+        @media (max-width: 445px) {
+            font-size: 5.5vw;
+            letter-spacing: .7rem;
+            padding: 1rem 0;
+        }
+    }
+
+    .slider__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+        @media (max-width: 800px) {
+            margin: 2rem 0;
+        }
+    }
+
+    .sld {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        &__img {
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+
+        @media (max-width: 450px) {
+            padding: 0 .6rem;
+            margin-bottom: 1rem;
+            text-align: start;
+
+            .heading-4 {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+}

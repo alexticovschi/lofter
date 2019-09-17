@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -8,12 +21,6 @@
 
 *:focus {
   outline: none
-}
-
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; // 10px/16px = 62.5%;
 }
 
 body {
