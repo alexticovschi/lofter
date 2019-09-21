@@ -5,7 +5,7 @@
     background-image: linear-gradient(rgba($color-header, .80), rgba($color-header, .80)), url(../../Resources/img/banner.jpg);
     background-size: cover;
     background-position: center;
-    padding: 0 3rem;
+    padding: 0 6rem;
 
     width: 100%;
     height: 100%;
@@ -18,10 +18,14 @@
         grid-column: full-start / full-end !important;
 
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1.2fr 1.8fr 1fr;
+
+        @media(max-width: 1400px) {
+            grid-template-columns: 1.4fr 1fr 1fr;
+        }
 
         @media(max-width: 1200px) {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1.2fr 1fr 1fr;
             padding: 0;
         }
 
@@ -32,7 +36,6 @@
 
         @media(max-width: 700px) {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, min-content);
             margin: 0;
         }
     }
@@ -45,9 +48,13 @@
         justify-items: center;
         align-content: center;
 
+        @media(max-width: 500px) {
+            grid-template-rows: .4fr 1fr;
+        }
+
         &__title {
             color: $color-primary;
-            font-size: 2.1rem;
+            font-size: 1.9rem;
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: .8rem;
@@ -55,7 +62,7 @@
             align-self: center;
 
             @media(max-width: 1200px) {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
 
             @media(max-width: 700px) {
@@ -85,7 +92,7 @@
 
     &__post {
         display: grid;
-        grid-template-columns: .4fr 1fr;
+        grid-template-columns: .6fr 1fr;
         height: 100%;
 
         @media(min-width: 659px) {
@@ -105,7 +112,15 @@
         }
 
         @media(max-width: 500px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: .6fr 1.4fr;
+        }
+
+        @media(max-width: 360px) {
+            grid-template-columns: .7fr 1.3fr;
+        }
+
+        @media(max-width: 320px) {
+            grid-template-columns: 1fr 1.2fr;
         }
 
         &__post-content {
@@ -117,11 +132,11 @@
             width: 100%;
 
             p {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 color: $color-grey-light-1;
 
                 @media(max-width: 1000px) {
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                 }
             }
 
@@ -131,12 +146,12 @@
             }
 
             @media(max-width: 900px) {
-                padding-left: 2rem;
+                padding-left: 1.8rem;
             }
         }
 
         &__post-title {
-            font-size: 2rem;
+            font-size: 1.9rem;
             color: $color-grey-light-1;
             align-self: start;
 
@@ -148,9 +163,13 @@
                 color: $color-primary;
             }
 
-            @media(max-width: 1000px) {
-                font-size: 1.6rem;
+            @media(max-width: 1200px) {
+                font-size: 1.5rem;
             }
+
+            // @media(max-width: 1000px) {
+            //     font-size: 1.56rem;
+            // }
         }
 
         &__post-img {
@@ -178,7 +197,7 @@
 
         &__title {
             color: $color-primary;
-            font-size: 2.1rem;
+            font-size: 1.9rem;
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: .8rem;
@@ -186,7 +205,7 @@
             align-self: center;
 
             @media(max-width: 1200px) {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
         }
     }
@@ -201,6 +220,10 @@
             li {
                 font-size: 1.8rem;
                 padding: .8rem 0;
+
+                @media(max-width: 1200px) {
+                    font-size: 1.6rem;
+                }
             }
 
 
@@ -240,14 +263,14 @@
 
         &__title {
             color: $color-primary;
-            font-size: 2.1rem;
+            font-size: 1.9rem;
             font-weight: 300;
             align-self: center;
             text-transform: uppercase;
             letter-spacing: .8rem;
 
             @media(max-width: 1200px) {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
         }
 
@@ -260,7 +283,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: .6rem;
+        grid-gap: 1rem;
     }
 
     &__item {
