@@ -1,33 +1,30 @@
-import React from "react";
+import React from 'react';
 
-import "./SideDrawer.scss";
+import './SideDrawer.scss';
 
 const SideDrawer = props => {
-  let drawerClasses = "side-drawer";
+  let drawerClasses = 'side-drawer';
   if (props.show) {
-    drawerClasses = "side-drawer open";
+    drawerClasses = 'side-drawer open';
   }
 
   return (
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <a href='/'>Home</a>
         </li>
         <li>
-          <a href="/interior-design">Interior Design</a>
+          <a href='/interior-design'>Interior Design</a>
         </li>
         <li>
-          <a href="/gallery">Gallery</a>
+          <a href='/gallery'>Gallery</a>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <a href='/about'>About</a>
         </li>
         <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
+          <a href='/contact'>Contact</a>
         </li>
       </ul>
     </nav>
