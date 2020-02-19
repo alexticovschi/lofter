@@ -31,7 +31,7 @@
             text-decoration: none;
         }
 
-        a > span {
+        a>span {
             text-decoration: none;
             font-size: 4rem;
             color: rgb(223, 198, 146);
@@ -57,7 +57,7 @@
         }
 
         a {
-            color: rgb(139, 120, 79);
+            color: rgb(20, 20, 20);
 
             font-family: adobe-garamond-pro, serif;
             font-weight: 500;
@@ -67,7 +67,7 @@
 
             &:hover,
             &:active {
-                color: rgb(78, 65, 35);
+                color: rgb(175, 147, 83);
             }
         }
     }
@@ -93,7 +93,7 @@
             margin-bottom: 4px;
             margin-top: 9px;
 
-            @media (max-width: 775px) { 
+            @media (max-width: 775px) {
                 font-size: 2rem;
                 margin-top: -10px !important;
             }
@@ -103,7 +103,7 @@
                 font-size: 1rem !important;
                 width: 100%;
 
-                @media (max-width: 775px) { 
+                @media (max-width: 775px) {
                     span {
                         font-size: 3.2rem;
                     }

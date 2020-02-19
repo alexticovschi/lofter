@@ -1,6 +1,6 @@
 @import "../../../sass/base";
 
-.header {
+.hero {
     background-color: $color-grey-dark-1;
     grid-column: full-start / full-end;
     background-image: linear-gradient(rgba($color-header, .70), rgba($color-header, .70)), url(../../../Resources/img/header-background.jpg);
