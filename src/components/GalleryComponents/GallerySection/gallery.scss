@@ -11,7 +11,7 @@
         padding: 5rem 0;
         font-size: 3rem;
         text-transform: uppercase;
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
         margin-left: -10rem;
 
         border-bottom: 0.5rem solid $color-primary;
@@ -26,10 +26,11 @@
             font-size: 4vw;
         }
 
-        @media(max-width: 445px) {
+        @media(max-width: 475px) {
             margin: 0 2rem;
             border-bottom: 0.3rem solid $color-primary;
             border-right: 0.3rem solid $color-primary;
+            font-size: 2rem;
         }
     }
 
